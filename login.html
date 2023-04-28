@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | ULEAM</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estiloLogin.css">
+
+
+</head>
+<body>
+    <header id="header">
+        <nav class="menu">
+         <div class="logo-box">
+           <h1><a href="#">ULEAM</a></h1>
+           <span class="btn-menu"><i class="fas fa-bars"></i></span>
+         </div>
+         
+         <div class="list-container">
+            <ul class="lists">
+                <li><a href="PaginaPrincipal.html" class="active">Inicio</a></li>
+
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+         </div>
+        </nav>
+
+
+
+    <div class="contenedor-login">
+
+        <!--========================================
+            Slider
+        ==========================================-->
+        <div class="contenedor-slider">
+
+            <div class="slider">
+
+                <!-- Slide 1 -->
+                <div class="slide fade ">
+                    <img src="img/img-slider-login.jpg" alt="">
+
+                    <div class="contenido-slider">
+
+                        <div class="logo">
+                            <img src="img/logo_ULEAM.png" alt="">
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide fade">
+                    <img src="img/img-slider-login-2.jpg" alt="">
+
+                    <div class="contenido-slider">
+
+                        <div class="logo">
+                            <img src="img/logo_ULEAM.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                 <!-- Slide 3 -->
+                <div class="slide fade">
+                    <img src="img/img-slider-login-3.jpg" alt="">
+
+                    <div class="contenido-slider">
+
+                        <div class="logo">
+                            <img src="img/logo_ULEAM.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- Botones next y prev -->
+            <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+
+            <!-- dots -->
+            <div class="dots">
+
+                <!-- <span class="dot active"></span> -->
+
+            </div>
+
+        </div>
+
+        <!--========================================
+            Formularios
+        ==========================================-->
+        <div class="contenedor-texto">
+
+            <div class="contenedor-form">
+
+                <h1 class="titulo">¡Bienvenido a la gestion de practicas pre-profesionales de la ULEAM!</h1>
+                <p class="descripcion">Ingresa a tu cuenta </p>
+
+                <ul class="tabs-links">
+                    <li class="tab-link active">Iniciar Sesión</li>
+                    <li class="tab-link ">Registrate</li>
+                </ul>
+
+                <!--========================================
+                    Formulario inicio de sesión
+                ==========================================-->
+                <form action="" method="POST" id="formLogin" class="formulario active">
+
+                    <div class="error-text">
+                        <p>aqui los errores del formualrio</p>
+                    </div>
+
+                    <input type="text" placeholder="Correo electrónico" class="input-text" name="correo" autocomplete="off"> 
+                    <div class="grupo-input">
+
+                        <input type="password" placeholder="Contraseña" name="password" class="input-text clave">
+                        <button type="button" class="icono fas fa-eye mostrarClave"></button>
+                        
+                    </div>
+
+                    <a href="recuperar.html" class="link">¿Ovidaste tu contraseña?</a>
+                    <button onclick="redireccionar()" class="btn" id="btnLogin" type="button">Iniciar Sesión</button>
+                </form>
+
+                 <!--========================================
+                    Formulario de Registro
+                ==========================================-->
+                <form action="" method="POST" id="formRegistro" class="formulario ">
+
+                    <div class="error-text ">
+                        
+                    </div>
+
+                    <input type="text" placeholder="Nombre y Apellidos" class="input-text" name="nombre" autocomplete="off"> 
+                    <input type="text" placeholder="Correo electrónico" class="input-text" name="correo" autocomplete="off"> 
+
+                    <div class="grupo-input">
+
+                        <input type="password" placeholder="Contraseña" name="password" class="input-text clave">
+                        <button type="button" class="icono fas fa-eye mostrarClave"></button>
+                        
+                    </div>
+
+
+                     <label class="contenedor-cbx animate">
+                        He leído y acepto los
+                        <a href="#" class="link">Términos y Condiciones</a>
+                        <a href="#" class="link">y Política de privacidad de la ULEAM</a>
+
+                        <input type="checkbox" name="cbx_terminos" >
+                        <span class="cbx-marca"></span>
+
+                    </label>
+
+                    <button class="btn" id="btnRegistro" type="button">Crear Cuenta</button>
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+   
+   
+   
+    <!--========================================
+       Mis Scripts
+    ==========================================-->
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
